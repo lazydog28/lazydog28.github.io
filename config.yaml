@@ -1,0 +1,66 @@
+baseURL: https://www.caiyun.fun/
+languageCode: zh-CN
+title: 彩云归
+#theme: hugo-theme-stack
+theme: hugo-theme-stack
+defaultContentLanguage: zh-cn
+# 是否包含中文，日语，韩文
+hasCJKLanguage: true
+# 开启支持表情符号
+# Enable Emoji support
+enableEmoji: true
+paginate: 5 # 随意翻阅
+
+params:
+  description: "彩云归"
+  mainSections: [ "post", "journal" ]
+  featuredImageField: "featured_image"
+  favicon: /favicon.ico
+  darkmode: true
+
+  dateFormat:
+    published: Jan 02, 2006
+    lastUpdated: Jan 02, 2006 15:04 MST
+  sidebar:
+    avatar:
+      enable: true
+      src: /rainbow.png
+      local: true
+    emoji: 🌈
+    subtitle: 当时明月在，曾照彩云归
+  article:
+    license:
+      enabled: true
+      default: Licensed under CC BY-NC-SA 4.0
+    toc: true
+  widgets:
+    homepage:
+      - type: search
+      - type: categories
+        params:
+          limit: 10
+      - type: tag-cloud
+        params:
+          limit: 10
+  imageProcessing:
+    cover:
+      enabled: true
+    content:
+      enabled: true
+  comments:
+    enabled: true
+    provider: utterances
+    utterances:
+      repo: Hermes981128/Hermes981128.github.io
+      issueTerm: pathname
+      label: comment
+
+
+menu:
+  social:
+    - identifier: github
+      name: GitHub
+      url: https://github.com/Hermes981128
+      params:
+        icon: brand-github
+
